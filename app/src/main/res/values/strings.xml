@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">X Food Finder</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_promo">PromoActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="spinnerHarga">
+        <item>Harga</item>
+        <item> Rp 0 - Rp 25k</item>
+        <item>Rp 25k - Rp 50k</item>
+        <item>Rp 50k - Rp 100k</item>
+        <item>Rp 100k - ...</item>
+
+    </string-array>
+
+    <string-array name="spinnerJarak">
+        <item>Jarak</item>
+        <item>0km - 1 km</item>
+        <item>1km - 3km</item>
+        <item>3km - 5km</item>
+        <item>5km - ...</item>
+    </string-array>
+
+    <string-array name="spinnerJenis">
+        <item>Jenis</item>
+        <item>Barat</item>
+        <item>Jepang</item>
+        <item>Indonesia</item>
+        <item>Chinese</item>
+    </string-array>
+
+    <string-array name="menuList">
+        <item>INFO</item>
+        <item>MENU</item>
+        <item>REVIEW</item>
+        <item>DIRECTION</item>
+        <item>GALLERY</item>
+    </string-array>
+
+    <string-array name="smokingNot">
+        <item>Non-smoking</item>
+        <item>Smoking</item>
+    </string-array>
+</resources>

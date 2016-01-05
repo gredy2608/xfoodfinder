@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cari nama restoran"
+        android:drawableLeft="@drawable/ic_search_img"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="URUT BERDASARKAN"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Rating"
+            android:layout_weight="1"
+            android:background="@color/lightGrey"
+            style="?android:attr/borderlessButtonStyle"
+            />
+
+        <View android:layout_height="?attr/actionBarSize"
+            android:layout_width="1px"
+            android:background="#90909090"/>
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:entries="@array/spinnerHarga"
+            android:layout_weight="1"
+            android:background="@color/lightGrey"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <View android:layout_height="?attr/actionBarSize"
+            android:layout_width="1px"
+            android:background="#90909090"/>
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:entries="@array/spinnerJarak"
+            android:layout_weight="1"
+            android:background="@color/lightGrey"
+            style="?android:attr/borderlessButtonStyle"
+            />
+
+        <View android:layout_height="?attr/actionBarSize"
+            android:layout_width="1px"
+            android:background="#90909090"/>
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:entries="@array/spinnerJenis"
+            android:layout_weight="1"
+            android:background="@color/lightGrey"
+            style="?android:attr/borderlessButtonStyle"
+            />
+    </LinearLayout>
+    
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchRestaurantListView">
+
+    </ListView>
+</LinearLayout>

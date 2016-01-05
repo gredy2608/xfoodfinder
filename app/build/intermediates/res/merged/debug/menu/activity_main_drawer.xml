@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_newresto"
+            android:icon="@drawable/ic_new_resto"
+            android:title="Restoran Terbaru" />
+        <item
+            android:id="@+id/nav_promo"
+            android:icon="@drawable/ic_promo_img"
+            android:title="Promo"
+            />
+    </group>
+
+    <item android:title="Kategori">
+        <menu>
+            <item
+                android:id="@+id/nav_barat_kategori"
+                android:title="Barat (20)"
+                />
+            <item
+                android:id="@+id/nav_cn_kategori"
+                android:title="Chinese (25)" />
+            <item
+                android:id="@+id/nav_jp_kategori"
+                android:title="Jepang (15)" />
+            <item
+                android:id="@+id/nav_id_kategori"
+                android:title="Indonesia (50)" />
+            <item
+                android:id="@+id/nav_korea_kategori"
+                android:title="Korea (10)" />
+
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whiteFont"
+    >
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingTop="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Obento Sushi"
+                android:id="@+id/detail_resto_name"
+                android:textSize="22sp"
+                android:layout_weight="1"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_star_rate"
+                    android:id="@+id/star_detail5"
+                    android:visibility="visible"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_star_rate"
+                    android:id="@+id/star_detail4"
+                    android:visibility="visible"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_star_rate"
+                    android:id="@+id/star_detail3"
+                    android:visibility="visible"
+
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_star_rate"
+                    android:id="@+id/star_detail2"
+                    android:visibility="visible"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_star_rate"
+                    android:id="@+id/star_detail1"
+                    android:visibility="visible"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/main"
+                android:layout_weight="10"
+                />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="left"
+                android:layout_weight="4">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:gravity="left"
+                        android:paddingLeft="32dp"
+                        android:paddingTop="32dp"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:text="INFO"
+                        android:textSize="16sp"
+                        android:onClick="onClickInfoDetail"
+                        />
+
+                    <include
+                        android:id="@+id/detail_info_extend"
+                        layout = "@layout/detail_info_layout" />
+
+
+                    <View android:layout_height="1px"
+                        android:layout_width="match_parent"
+                        android:background="#90909090"/>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:gravity="start"
+                        android:paddingLeft="32dp"
+                        android:paddingTop="32dp"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:text="MENU"
+                        android:onClick="onClickMenuDetail"
+                        android:textSize="16sp"
+                        />
+                    <include
+                        android:id="@+id/detail_menu_extend"
+                        layout = "@layout/menu_detail_fragment" />
+                    <View android:layout_height="1px"
+                        android:layout_width="match_parent"
+                        android:background="#90909090"/>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:gravity="start"
+                        android:paddingLeft="32dp"
+                        android:paddingTop="32dp"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:text="REVIEW &amp; COMMENT"
+                        android:textSize="16sp"
+                        android:onClick="onClickReviewDetail"
+                        />
+
+                    <include
+                        android:id="@+id/detail_review_extend"
+                        layout = "@layout/review_detail_layout" />
+
+                    <View android:layout_height="1px"
+                        android:layout_width="match_parent"
+                        android:background="#90909090"/>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:gravity="start"
+                        android:paddingLeft="32dp"
+                        android:paddingTop="32dp"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:text="DIRECTION"
+                        android:textSize="16sp"
+                        android:onClick="onClickDirectionDetail"
+                        />
+
+                    <include
+                        android:id="@+id/detail_direction_extend"
+                        layout = "@layout/direction_detail_layout" />
+
+                    <View android:layout_height="1px"
+                        android:layout_width="match_parent"
+                        android:background="#90909090"/>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:gravity="start"
+                        android:paddingLeft="32dp"
+                        android:paddingTop="32dp"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:text="GALLERY"
+                        android:textSize="16sp"
+                        android:onClick="onClickGalleryDetail"
+
+                        />
+
+                    <include
+                        android:id="@+id/detail_gallery_extend"
+                        layout = "@layout/gallery_detail_layout" />
+
+                    <View android:layout_height="1px"
+                        android:layout_width="match_parent"
+                        android:background="#90909090"/>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/whiteFont"
+                android:background="@color/greenColor"
+                android:text="Book Now!"
+                android:onClick="showDialogBooking"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+</LinearLayout>

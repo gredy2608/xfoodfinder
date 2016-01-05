@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <View android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="#90909090"
+        android:paddingBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="50dp">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_location_img"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Jl. ABC No. 1"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="50dp">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_clock_img"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="09:00 - 21:00"
+                android:textSize="16dp"/>
+         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="50dp">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_phone_img"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="022-2227856"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="50dp">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_globe_img"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="www.dummyeatery.com"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="50dp">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_cart_img"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Makanan barat"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="50dp">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_star_img"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Wi-fi, Free refill"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

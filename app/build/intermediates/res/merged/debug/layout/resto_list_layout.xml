@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 km"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="right"
+        android:id="@+id/resto_distance_list"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/nama_resto_label"
+            android:text="Nama Resto"
+            android:textSize="22sp"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star_rate"
+                android:id="@+id/star1"
+                android:visibility="invisible"
+                />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star_rate"
+                android:id="@+id/star2"
+                android:visibility="invisible"
+                />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star_rate"
+                android:id="@+id/star3"
+                android:visibility="invisible"
+                />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star_rate"
+                android:id="@+id/star4"
+                android:visibility="invisible"
+                />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star_rate"
+                android:id="@+id/star5"
+                android:visibility="invisible"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_no_img"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="22dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Makanan Barat"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/jenis_resto"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jl. ABC No.1"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/alamat_resto"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp 20.000 - Rp 50.000"
+                android:id="@+id/price_range_resto"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
